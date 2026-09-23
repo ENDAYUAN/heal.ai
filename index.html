@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heal AI 见愈 · 拍照连线，看清保命趋势</title>
+  <meta name="description" content="Heal AI 见愈 —— 专为长期口服抗病毒药物的慢性乙肝患者设计的极简 AI 随访助理。拍照识别化验单，自动结构化，把历年散乱的检验结果连成一条看得懂的趋势。">
+  <meta name="theme-color" content="#060f12">
+  <meta property="og:title" content="Heal AI 见愈 · 拍照连线，看清保命趋势">
+  <meta property="og:description" content="把历年散乱、易丢的化验单，智能整理成一条看得懂的生命防线。">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner wrap">
+      <a class="brand" href="#top">
+        <img src="assets/logo.png" alt="Heal AI 见愈 标志" class="brand-logo">
+        <span class="brand-name">Heal AI <em>见愈</em></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#pain">痛点</a>
+        <a href="#features">功能</a>
+        <a href="#how">怎么用</a>
+        <a href="#trust">安全合规</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+
+      <a class="btn btn-primary nav-cta" href="#download">微信体验</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">慢乙肝 · 极简 AI 随访助理</span>
+          <h1>拍照连线，<br>看清<span class="grad">健康趋势</span></h1>
+          <p class="lead">把历年散乱、易丢的化验单，智能整理成一条看得懂的生命防线。</p>
+          <p class="en">Scan your data, continuous your life.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="#download">微信扫码体验</a>
+            <a class="btn btn-ghost btn-lg" href="#features">看看能做什么</a>
+          </div>
+          <ul class="hero-points">
+            <li>一键拍照识别化验单</li>
+            <li>五项 / DNA / 肝功能自动连线</li>
+            <li>数据加密，可随时删除</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="trend-card">
+            <div class="trend-head">
+              <span class="dot"></span>HBV-DNA 趋势
+              <span class="trend-tag">例</span>
+            </div>
+            <svg viewBox="0 0 320 200" class="trend-svg" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.35"/>
+                  <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#2dd4bf"/>
+                  <stop offset="100%" stop-color="#b6f36a"/>
+                </linearGradient>
+              </defs>
+              <g class="grid">
+                <line x1="0" y1="50" x2="320" y2="50"/>
+                <line x1="0" y1="100" x2="320" y2="100"/>
+                <line x1="0" y1="150" x2="320" y2="150"/>
+              </g>
+              <path d="M10,30 L70,42 L130,90 L190,86 L250,140 L310,150 L310,200 L10,200 Z" fill="url(#areaFill)"/>
+              <polyline points="10,30 70,42 130,90 190,86 250,140 310,150"
+                        fill="none" stroke="url(#lineGrad)" stroke-width="3"
+                        stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="10" cy="30" r="4" class="pt"/>
+              <circle cx="130" cy="90" r="4" class="pt"/>
+              <circle cx="250" cy="140" r="4" class="pt"/>
+              <circle cx="310" cy="150" r="6" class="pt pt-now"/>
+            </svg>
+            <div class="trend-foot">
+              <span>2023</span><span>2024</span><span>2025</span><span class="now">最新</span>
+            </div>
+          </div>
+          <div class="float-chip chip-1">AI 已结构化</div>
+          <div class="float-chip chip-2">趋势 ↓ 好转</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PAIN ============ -->
+    <section class="sec" id="pain">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="kicker">是不是也这样</span>
+          <h2>化验单攒了一摞，却看不清变化</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card pain reveal">
+            <div class="ico">
+              <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>单子总丢</h3>
+            <p>纸质报告随手一放就找不着，换台手机、换个医院，历史记录全断了。</p>
+          </article>
+          <article class="card pain reveal">
+            <div class="ico">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v5m0 3h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3>看不懂</h3>
+            <p>五项、DNA、肝功能，一堆数字和箭头，不知道该看哪一个、算好还是坏。</p>
+          </article>
+          <article class="card pain reveal">
+            <div class="ico">
+              <svg viewBox="0 0 24 24"><path d="M3 17l5-6 4 3 4-7 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>断了线</h3>
+            <p>每次只看得到一张单，连不起来就看不到趋势，错过身体发出的信号。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="sec alt" id="features">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="kicker">核心功能</span>
+          <h2>前端越傻瓜，后端越聪明</h2>
+          <p class="sec-sub">分开看是废纸，连着看是趋势。</p>
+        </div>
+        <div class="grid-feat">
+          <article class="card feat reveal">
+            <div class="feat-ico">
+              <svg viewBox="0 0 24 24"><path d="M4 8V6a2 2 0 0 1 2-2h2M20 8V6a2 2 0 0 0-2-2h-2M4 16v2a2 2 0 0 0 2 2h2M20 16v2a2 2 0 0 1-2 2h-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <h3>拍照即识别</h3>
+            <p>手机一拍，AI 自动把化验单结构化——乙肝五项、DNA、肝功能，一项不漏。</p>
+          </article>
+          <article class="card feat reveal">
+            <div class="feat-ico">
+              <svg viewBox="0 0 24 24"><path d="M3 16l5-5 4 4 5-8 4 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="8" cy="11" r="1.6" fill="currentColor"/><circle cx="12" cy="15" r="1.6" fill="currentColor"/></svg>
+            </div>
+            <h3>趋势跨年连线</h3>
+            <p>同一指标连成线，病毒载量、肝功能的变化一眼看清，跨年也不是问题。</p>
+          </article>
+          <article class="card feat reveal">
+            <div class="feat-ico">
+              <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.3-7-9.4A3.6 3.6 0 0 1 12 8a3.6 3.6 0 0 1 7 2.6C19 15.7 12 20 12 20z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>随访建议</h3>
+            <p>根据最新结果，自动给出复查节奏提醒（建议咨询专业医生）。</p>
+          </article>
+          <article class="card feat reveal">
+            <div class="feat-ico">
+              <svg viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="6" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M9 9v6" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <h3>吃药打卡</h3>
+            <p>极简登记每天服药，连续天数帮你把坚持变成一条看得见的线。</p>
+          </article>
+          <article class="card feat reveal">
+            <div class="feat-ico">
+              <svg viewBox="0 0 24 24"><path d="M7 11V8a5 5 0 0 1 10 0v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="5" y="11" width="14" height="9" rx="2.4" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <h3>加密云同步</h3>
+            <p>本地 + 云端双重备份，换设备不丢数据；你随时可以导出或删除自己的数据。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HOW ============ -->
+    <section class="sec" id="how">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="kicker">三步上手</span>
+          <h2>不用懂指标，也能管好趋势</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-no">1</span>
+            <h3>拍照 / 上传</h3>
+            <p>把化验单拍下来，或从相册选一张，其余交给它。</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-no">2</span>
+            <h3>AI 自动结构化</h3>
+            <p>几秒钟识别出日期、指标与数值，你只需核对一下。</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-no">3</span>
+            <h3>看趋势 + 提醒</h3>
+            <p>进趋势页看连线，按随访建议安排下一次复查。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ WHY ============ -->
+    <section class="sec alt" id="why">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <span class="kicker">为什么是见愈</span>
+          <h2>为慢性乙肝患者的健康而做</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card why reveal">
+            <h3>极简前端 · 聪明后端</h3>
+            <p>没有密密麻麻的报表和医学黑话，手机上两步就能看完；复杂的事交给背后的多模态大模型。</p>
+          </article>
+          <article class="card why reveal">
+            <h3>隐私优先</h3>
+            <p>健康数据属于你自己。加密存储与传输，遵循《个人信息保护法》，随时可导出、可删除。</p>
+          </article>
+          <article class="card why reveal">
+            <h3>微信里原生无缝</h3>
+            <p>不装 App、不注册账号，微信扫码即用，子女也能替父母一起管。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRUST ============ -->
+    <section class="sec trust" id="trust">
+      <div class="wrap trust-inner">
+        <div class="trust-copy reveal">
+          <span class="kicker">安全与合规</span>
+          <h2>放心把健康数据交给它</h2>
+          <ul class="trust-list">
+            <li><span class="tick">✓</span>数据加密存储与传输，云端按账号隔离</li>
+            <li><span class="tick">✓</span>遵循《个人信息保护法》，你可随时导出或删除</li>
+            <li><span class="tick">✓</span>退出登录即隐藏数据，注销账号即彻底删除</li>
+          </ul>
+        </div>
+        <div class="notice reveal">
+          <strong>重要声明</strong>
+          <p>本产品为健康管理辅助工具，所展示的指标解读与随访提示仅供参考，<u>不能替代执业医师的诊断、治疗与用药决策</u>。如有身体不适或指标异常，请及时咨询专业医生。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="sec alt" id="faq">
+      <div class="wrap narrow">
+        <div class="sec-head reveal">
+          <span class="kicker">常见问题</span>
+          <h2>你可能想知道</h2>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq">
+            <summary>要收费吗？</summary>
+            <p>核心的拍照识别、趋势连线与随访提示可免费使用。后续若有增值服务，会明确告知，绝不默认扣费。</p>
+          </details>
+          <details class="faq">
+            <summary>我的化验单数据安全吗？</summary>
+            <p>数据加密存储与传输，云端按账号隔离，仅限创建都本人，只有你自己能看到。你可以随时导出或删除，注销账号会彻底清除数据。</p>
+          </details>
+          <details class="faq">
+            <summary>支持哪些化验单？</summary>
+            <p>目前支持乙肝五项、HBV-DNA、肝功能等常见乙肝随访检验单，识别后可在校对页修改，确保结果准确。</p>
+          </details>
+          <details class="faq">
+            <summary>它能代替医生吗？</summary>
+            <p>不能。见愈是帮你"把数据理清楚、把趋势看出来"的工具，所有解读与提示仅供参考，治疗方案请以专业医生的意见为准。</p>
+          </details>
+          <details class="faq">
+            <summary>怎么开始使用？</summary>
+            <p>在电脑或手机上打开本页，用微信扫一扫下方的小程序码，或在微信里搜索"见愈"，即可直接使用，无需注册。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DOWNLOAD / QR ============ -->
+    <section class="sec cta" id="download">
+      <div class="wrap cta-inner reveal">
+        <div class="cta-copy">
+          <h2>微信扫一扫，<br>开始管理你的健康趋势</h2>
+          <p>页面在电脑、手机上都可正常浏览；扫码后即在小程序内使用，无需下载安装。</p>
+          <p class="cta-alt">或在微信中搜索小程序：<strong>heal.ai见愈</strong></p>
+        </div>
+        <div class="qr-box">
+          <img src="assets/qrcode.png" alt="Heal AI 见愈 微信小程序码">
+          <span>微信扫码体验</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Heal AI 见愈">
+        <div>
+          <strong>Heal AI 见愈</strong>
+          <span>Scan your data, continuous your life.</span>
+        </div>
+      </div>
+      <nav class="footer-links">
+        <a href="#features">功能</a>
+        <a href="#how">怎么用</a>
+        <a href="#faq">常见问题</a>
+        <a href="privacy-policy.html">隐私政策</a>
+      </nav>
+    </div>
+    <div class="wrap footer-note">
+      <p>本产品为健康管理辅助工具，不替代专业医生的诊断与治疗。© <span id="year"></span> Heal AI 见愈</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
